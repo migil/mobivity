@@ -1,0 +1,71 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.justingil1748.mobivity.Game1HomeActivity">
+
+    <NumberPicker
+        android:id="@+id/dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="78dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobivity Game1"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="106dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp" />
+
+    <NumberPicker
+        android:id="@+id/np1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="31dp"
+        android:layout_above="@+id/textView7"
+        android:layout_alignStart="@+id/textView" />
+
+    <NumberPicker
+        android:id="@+id/np2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignBaseline="@+id/np1"
+        android:layout_alignBottom="@+id/np1"
+        android:layout_toEndOf="@+id/np1" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Initial Position"
+        android:layout_above="@+id/np1"
+        android:layout_alignEnd="@+id/textView7"
+        android:layout_marginBottom="45dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Initial Direction"
+        android:layout_above="@+id/dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:text="Start Game" />
+</RelativeLayout>

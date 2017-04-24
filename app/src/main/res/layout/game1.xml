@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/left_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:text="LEFT"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/move_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MOVE"
+        android:layout_alignBaseline="@+id/left_b"
+        android:layout_alignBottom="@+id/left_b"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/right_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RIGHT"
+        android:layout_alignBaseline="@+id/move_b"
+        android:layout_alignBottom="@+id/move_b"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="Current Position: " />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="94dp"
+        android:text="Current Direction: "
+        android:layout_below="@+id/t2"
+        android:layout_alignEnd="@+id/t2" />
+
+    <TextView
+        android:id="@+id/pos_t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Position"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/dir_t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Direction"
+        android:layout_alignBaseline="@+id/t1"
+        android:layout_alignBottom="@+id/t1"
+        android:layout_alignEnd="@+id/pos_t" />
+</RelativeLayout>
